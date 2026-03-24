@@ -32,7 +32,7 @@ interface DayData {
 export default function HistoricalView({ activities, goals }: HistoricalViewProps) {
   const [selectedDate, setSelectedDate] = useState<Date>(new Date());
   const [viewMode, setViewMode] = useState<'calendar' | 'timeline' | 'comparison'>('calendar');
-  const [comparisonDate, setComparisonDate] = useState<Date | null>(null);
+  const [comparisonDate, setComparisonDate] = useState<Date | undefined>(undefined);
   const [searchTerm, setSearchTerm] = useState('');
   const [categoryFilter, setCategoryFilter] = useState('all');
   const [timeRange, setTimeRange] = useState<'week' | 'month' | '3months' | '6months' | 'year'>('month');

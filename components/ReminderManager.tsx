@@ -307,7 +307,6 @@ export default function ReminderManager({ reminders, onReminderSaved, onReminder
                     <Switch
                       checked={reminder.active}
                       onCheckedChange={() => toggleReminderActive(reminder.id)}
-                      size="sm"
                     />
                   </div>
                 </CardHeader>
